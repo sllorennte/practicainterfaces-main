@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Quevedo</title>
+    <link rel="stylesheet" href="estilos/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <li><a href="inicio.html"><h1 class="titulo">Quevedo</h1></a></li>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="shop.html">Tienda</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="tour.html">Gira</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+    <div class="hero-contenido">
+        <h1>Descubre la nueva colección</h1>
+        <p>Diseños exclusivos. Estilo Quevedo.</p>
+        <a href="#productos" class="boton-hero">Ver productos</a>
+    </div>
+    </section>
+    <h1 class="titulo-seccion">Productos destacados</h1>
+    <main class="tienda">
+        <section class="contenedor-tienda">
+            <div class="producto">
+                <img src="imagenes/producto1.webp" alt="Sudadera Negra">
+                <h2>Camiseta azul marino</h2>
+                <p>30,00€</p>
+                <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>
+            </div>
+
+            <div class="producto agotado">
+                <img src="imagenes/producto2.webp" alt="Camiseta Blanca">
+                <h2>Camiseta Blanca</h2>
+                <p>35,00€</p>
+                <span class="etiqueta-agotado">Agotado</span>
+            </div>
+            
+            <div class="producto">
+                <img src="imagenes/producto3.webp" alt="Sudadera Azul">
+                <h2>Sudadera Azul</h2>
+                <p>59,99€</p>
+                <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>
+            </div>
+
+            <div class="producto agotado">
+                <img src="imagenes/producto4.webp" alt="Stickers Quevedo">
+                <h2>Stickers Exclusivos</h2>
+                <p>9,99€</p>
+                <span class="etiqueta-agotado">Agotado</span>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/producto5.webp" alt="Anillos Quevedo">
+                <h2>Anillos</h2>
+                <p>19,99€</p>
+                <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/producto6.webp" alt="Album DQE">
+                <h2>Álbum DQE</h2>
+                <p>14,99€</p>
+                <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>
+            </div>
+        </section>
+        <div class="paginacion">
+        <a href="#">&laquo;</a>
+        <a href="shop.html" class="activo">1</a>
+        <a href="shop.html">2</a>
+        <a href="shop.html">3</a>
+        <a href="#">&raquo;</a>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="footer-contenido">
+        <p class="footer-copy">&copy; 2025 Quevedo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

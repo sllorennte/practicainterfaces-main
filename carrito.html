@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito - Quevedo</title>
+  <link rel="stylesheet" href="estilos/carrito.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+  <a href="inicio.html"><h1 class="titulo">Quevedo</h1></a>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+        </label>
+  <nav class="menu">
+    <ul>
+      <li><a href="shop.html">Tienda</a></li>
+      <li><a href="musica.html">Música</a></li>
+      <li><a href="tour.html">Gira</a></li>
+      <li><a href="carrito.html" title="Carrito">
+        <i class="fas fa-shopping-cart" style="font-size: 1.8rem;"></i>
+      </a></li>
+    </ul>
+  </nav>
+</header>
+  <main class="carrito">
+    <div class="contenedor-producto">
+      <div class="galeria">
+        <img id="imagen-principal" src="imagenes/producto1.1.webp" alt="Producto grande" />
+        <div class="miniaturas">
+          <img src="imagenes/producto1.webp" alt="Vista 1" onclick="cambiarImagen(this.src)" />
+          <img src="imagenes/producto1.1.webp" alt="Vista 2" onclick="cambiarImagen(this.src)" />
+          <img src="imagenes/producto1.2.webp" alt="Vista 3" onclick="cambiarImagen(this.src)" />
+        </div>
+      </div>
+
+      <div class="info">
+        <h2>Camiseta Manga Larga "Sol DQE" Azul</h2>
+        <p class="color">Color: <span>Azul</span></p>
+        <p class="precio">29,99€</p>
+
+        <label for="talla">Talla:</label>
+        <select id="talla">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" value="1" min="1" />
+
+        <button class="boton-comprar">Añadir al carrito</button>
+        <button class="paypal">Pagar con PayPal</button>
+      </div>
+    </div>
+  </main>
+
+  <section class="interes">
+    <h2>También podría interesarte</h2>
+    <div class="productos-relacionados">
+      <div class="producto">
+        <img src="imagenes/producto3.webp" alt="Sudadera Azul">
+        <h3>Sudadera Azul</h3>
+        <p>59,99€</p>
+        <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>
+      </div>
+      <div class="producto">
+        <img src="imagenes/producto5.webp" alt="Anillos Quevedo">
+        <h3>Anillos</h3>
+        <p>19,99€</p>
+        <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>
+      </div>
+      <div class="producto">
+        <img src="imagenes/producto6.webp" alt="Album DQE">
+        <h3>Álbum DQE</h3>
+        <p>14,99€</p>
+        <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p class="footer-copy">&copy; 2025 Quevedo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function cambiarImagen(src) {
+      document.getElementById("imagen-principal").src = src;
+    }
+  </script>
+</body>
+</html>
